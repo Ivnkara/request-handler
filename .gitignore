@@ -1,0 +1,4 @@
+vendor
+log
+docker/nginx/logs
+.env

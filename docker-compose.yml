@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+    nginx:
+        image: nginx:latest
+        ports:
+            - "80:80"
+        volumes:
+            - ./docker/nginx:/etc/nginx/conf.d
+            - ./docker/nginx/logs:/var/log/nginx
+            - ./:/var/www
+        links:
+            - php
+    php:
+        build: ./docker/php
+        volumes:
+            - ./:/var/www

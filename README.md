@@ -15,9 +15,9 @@ composer install
 mkdir log && touch log/log.txt && mkdir docker/nginx/logs
 ```
 
-Запуск апп, придварительно освободить 80 порт
+Запуск апп, предварительно освободить 80 порт
 ```
 docker-compose up -d
 ```
 
-открывает в браузере ```http://localhost```
+открываем в браузере ```http://localhost```
